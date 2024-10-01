@@ -1,0 +1,25 @@
+export default function() {
+    const contentFirst = document.createElement("div");
+    contentFirst.className = "content-first";
+    const firstDiv = document.createElement("div");
+    firstDiv.textContent = "At Mars\'s";
+    const secondDiv = document.createElement("div");
+    secondDiv.textContent = "Have it your way";
+    const thirdDiv = document.createElement("div");
+    thirdDiv.textContent = "A taste of Mars at your fingertips";
+    const fourthDiv = document.createElement("div");
+    fourthDiv.textContent = "Experience world class burgers like never before";
+    const buttonDiv = document.createElement("div");
+    const button1 = document.createElement("button");
+    button1.textContent = "Order now";
+    const button2 = document.createElement("button");
+    button2.textContent = "Contact us";
+    buttonDiv.appendChild(button1);
+    buttonDiv.appendChild(button2);
+    contentFirst.appendChild(firstDiv);
+    contentFirst.appendChild(secondDiv);
+    contentFirst.appendChild(thirdDiv);
+    contentFirst.appendChild(fourthDiv);
+    contentFirst.appendChild(buttonDiv);
+    document.querySelector("#content").appendChild(contentFirst);
+};
